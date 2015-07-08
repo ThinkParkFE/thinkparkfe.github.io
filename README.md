@@ -1,5 +1,6 @@
 # thinkparkfe.github.io
-ThinkPark FE开源项目官网 - 我们的愿景: 成为业界卓越的Web团队！  http://ThinkParkFE.github.io/
+ThinkPark FE开源项目官网 
+http://ThinkParkFE.github.io/
 =================
 One Team, One Dream! 多年以后，让我们创造一个奇迹！
 
@@ -19,21 +20,22 @@ http://ThinkParkFE.github.io/CodeGuide/
 ### 标准文件结构
 
 	[mainfolder]
-	 |--[js]		//js文件夹
-	 |   |-- main.js
-	 |--[style]		//所有样式相关的css和image
-	 |   |-- [image]	//主要image文件夹
-	 |   |    |-- img1.png
-	 |   |    ...
-	 |   |-- [style_name_a]	//皮肤A的文件夹
-	 |   |    |-- [image]	//皮肤A的image
-	 |   |    |-- style_name_a.css	//皮肤A的css文件
-	 |   |    ...
-	 |   |-- [style_name_b]	//皮肤B的文件夹
-	 |   |-- [style_name_c]	//皮肤C的文件夹
-	 |   |-- main.css	//主要css文件
-	 |--[audio]		//所有样式相关的audio音频文件
-	 |   |-- sound.mp3	//audio文件
+	 |--[assets]
+	 |   |--[js]		//js文件夹
+	 |   |   |-- main.js
+	 |   |--[style]		//所有样式相关的css和image
+	 |   |   |-- [image]	//主要image文件夹
+	 |   |   |    |-- img1.png
+	 |   |   |    ...
+	 |   |   |-- [style_name_a]	//皮肤A的文件夹
+	 |   |   |    |-- [image]	//皮肤A的image
+	 |   |   |    |-- style_name_a.css	//皮肤A的css文件
+	 |   |   |    ...
+	 |   |   |-- [style_name_b]	//皮肤B的文件夹
+	 |   |   |-- [style_name_c]	//皮肤C的文件夹
+	 |   |   |-- main.css	//主要css文件
+	 |   |--[media]		//所有样式相关的audio音频文件
+	 |   |   |-- sound.mp3	//audio文件
  	 |-- index.html		//index文件
  	 |-- page1.html		//其他页面
  	 ...
@@ -67,47 +69,15 @@ http://ThinkParkFE.github.io/CodeGuide/
 			</p>
 		</div>
 
-		<script type="text/javascript" src="./js/jx.min.js"></script>
-		<script type="text/javascript">
+		<script src="./js/main.js"></script>
+		<script >
 
-			var J = new Jx();
+			var M = new main();
 
 		</script>
 	</body>
 	</html>
 
-
-
-### 标准javascript代码
-
-	/**
-	 * === Javascript eXtension 模块 =========================================================================
-	 * Copyright (c) 2015 ThinkParkFE, All rights reserved.
-	 * http://ThinkParkFE.github.io/
-	 * Code licensed under the BSD License:
- 	 * http://ThinkParkFE.github.io/license.txt
-	 * 
-	 * @version 2.0
-	 * @author	andy <hejun@socialpark.com.cn>
-	 * @description 描述文字
-	 * ---2015.7.8 ----------------------------
-	 */
-
-	/**
-	 * 注释
-	 */
-	Jx().$package('ThinkParkFE', function(J) {
-		var self = this,
-			$D = J.dom,
-			$E = J.event,
-			$H = J.http;
-
-		// 输出字符串'Hello world!'
-		J.out('Hello world!');
-
-		// 输出this === ThinkParkFE的判断结果
-		J.out(this === ThinkParkFE);
-	});
 
 
 ### 标准css代码
@@ -142,27 +112,19 @@ http://ThinkParkFE.github.io/CodeGuide/
   	<div class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script> <a href="http://ThinkParkFE.github.io/" target="_blank">ThinkParkFE</a>. All Rights Reserved.</div>
 
 
-### 标准捐赠代码
-
-	 <a href="#" target="helpus" title="支持开源项目，请我们喝杯咖啡吧^_Q"> <img src="http://ThinkParkFE.github.io/style/image/alipay_btn.jpg" alt="支持开源项目，请我们喝杯咖啡吧^_Q" /> </a>
-	 
-	 <a href="#" target="helpus" title="感谢支持开源项目，我们会努力做的更好！"> <img src="http://ThinkParkFE.github.io/style/image/alipay_btn.jpg" alt="捐赠开源项目" /> </a>
 
 ### 标准访问统计代码
 
 	<!--baidu Analytics-->
 	<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?699f59be37467ca880923a030224adc4";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
-
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?1ee2f02312eff0b52269d9e346025a78";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 
 
 ### 关于团队
