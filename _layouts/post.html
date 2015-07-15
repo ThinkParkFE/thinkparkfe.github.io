@@ -29,7 +29,7 @@ layout: default
 </div>
 {% endif %}
 {% if site.duoshuo_shortname %}
-  <section id="comments">
+  <section id="comments" class="comment container">
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="{{  page.layout }}-{{  page.id }}" data-title="{{  page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
     <!-- 多说评论框 end -->
