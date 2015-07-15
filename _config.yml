@@ -2,6 +2,7 @@
 title: ThinkParkFE
 email: hejun@socialpark.com.cn
 description: ThinkParkFE 团队常用js
+permalink: /:year/:month/:day/:title.html
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ThinkParkFE.github.io" # the base hostname & protocol for your site
 
@@ -30,7 +31,12 @@ duoshuo_shortname: thinkparkfe
 baidu_tongji: 699f59be37467ca880923a030224adc4
 
 # Build settings
-markdown: kramdown
+pygments: true  
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
+
 sass:
   style: compressed
 gems:
