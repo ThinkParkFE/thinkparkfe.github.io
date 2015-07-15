@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url={{ "/ie.html" | prepend: site.baseurl }}"><![endif]-->
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <script src="{{ "/assets/js/prefixfree.js" | prepend: site.baseurl }}"></script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileImage" content="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="nightmode" content="disable">
+    <meta name="imagemode" content="force">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="360-fullscreen" content="true"/>
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui,uc-fitscreen=0">
+    <meta name="author" content="Andy">
+    <meta name="Copyright" content="Copyright (c) 2010-2015 socialpark.com.cn">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+    <link rel="icon" sizes="196x196" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+</head>

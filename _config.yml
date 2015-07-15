@@ -1,0 +1,37 @@
+# Site settings
+title: ThinkParkFE
+email: hejun@socialpark.com.cn
+description: ThinkParkFE 团队常用js
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ThinkParkFE.github.io" # the base hostname & protocol for your site
+
+
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'categories'
+
+
+# Social account
+# twitter:  username
+# weibo:    ID
+github:   ThinkParkFE
+# codepen:  username
+# dribbble: username
+
+
+# Comment
+# disqus_shortname: discussion_shortname
+duoshuo_shortname: thinkparkfe
+
+# Google Analytics
+# google_analytics: tracking_ID
+
+#Baidu Tongji
+baidu_tongji: 699f59be37467ca880923a030224adc4
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+gems:
+  - jekyll-sitemap

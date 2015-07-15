@@ -1,92 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="author" content="ThinkPark.FE.Andy"/>
-    <meta name="copyright" content="ThinkParkFE"/>
-    <title>ThinkParkFE - ThinkPark Web 前端团队</title>
-    <link href="./style/main.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript">
-        // 测速
-        var _speedMark = new Date();
+---
+layout: default
+---
+<div id="home" class="container">
+      <h1>ThinkParkFE</h1>
+            <p>团队沉淀  精华提炼 </p>
+            <h2>/* 快速导航 *\</h2>
+            <ul>
+            	<li><a href="http://ThinkParkFE.github.io/CodeGuide/" target="_blank">团队规范文档新</a></li>
+                <li><a href="http://ThinkParkFE.github.io/css3-tool/" target="_blank">css3 动画导航</a></li>
 
-
-        // 倒计时
-        var getLastDay = function (time) {
-            var now = new Date();
-            var lastTime = time.getTime() - now.getTime();
-            var lastDay = Math.ceil(lastTime / (1000 * 60 * 60 * 24));
-            if (lastDay < 0) {
-                lastDay = 0;
-            }
-            return lastDay;
-        }
-
-        // 呵呵，Z.P.
-        var lastDay6 = getLastDay(new Date("2015-3-20"));
-        // 呵呵，A.L.
-        var lastDay7 = getLastDay(new Date("2015-3-29"));
-        // 呵呵，IP
-        var lastDay8 = getLastDay(new Date("2015-5-21"));
-        // 呵呵，T.S.
-        var lastDay9 = getLastDay(new Date("2015-5-22"));
-        // 呵呵，A.A.
-        var lastDay10 = getLastDay(new Date("2015-12-22"));
-
-
-    </script>
-</head>
-<body>
-<div class="title">ThinkParkFE
-    <script>document.write(new Date().getFullYear());</script>
-</div>
-<img class="logo" src="style/image/thinkparkfe.png"/>
-
-<div class="breath" title="One Team, One Dream! ">light</div>
-
-<div class="workListBoard">
-    <h3>Works List</h3>
-    <ul class="workList">
-        <li><a target="_blank" href="http://ThinkParkFE.github.io/">ThinkPark AlloyTeam 团队博客</a></li>
-
-        <!--li><a target="_blank" href="###">神秘HTML5动画创作工具{代号010}，发布倒计时：<script>document.write(lastDay7);</script> <span class="new">新</span></a></li>
-        <li><a target="_blank" href="###">神秘HTML5游戏{代号009}，发布倒计时：<script>document.write(lastDay9);</script> <span class="new">新</span></a></li>
-        <li><a target="_blank" href="###">神秘HTML5创作工具{代号008}，发布倒计时：<script>document.write(lastDay8);</script> <span class="new">新</span></a></li>
-        <li><a target="_blank" href="###">神秘HTML5动画引擎{代号007}，发布倒计时：<script>document.write(lastDay7);</script> <span class="new">新</span></a></li-->
-
-        <li><a target="_blank" href="http://kmdjs.github.io/zoom/">图片【超分辨率】放大器<span class="new">新</span></a></li>
-        <li><a target="_blank" href="http://rehorn.github.io/livepool/">基于 NodeJs 的跨平台 Web 抓包替换工具 LivePool<span
-                class="new">新</span></a></li>
-
-
-        <li><a target="_blank" href="http://ThinkParkFE.github.io/Spirit/">ThinkPark移动Web整体解决方案——Spirit</a></li>
-
-        <li><a target="_blank" href="http://madscript.com/modjs/">高性能Web前端构建工具ModJS</a></li>
-        <li><a target="_blank" href="https://github.com/chemdemo/node-stepify">stepify——轻松管理Node.js异步工作流</a></li>
-
-
-        <li><a target="_blank" href="http://ThinkParkFE.github.io/css3-tool/">CSS3 UI Lib</a></li>
-
-
-        <li><a target="_blank" href="http://ThinkParkFE.github.io/CodeGuide/">团队规范文档<span class="new">新</span></a></li>
-        <li><a target="_blank" href="http://github.com/ThinkParkFE/">Working on Github.com</a></li>
-        <li><a target="_blank" href="http://ThinkParkFE.github.io/about/">About</a></li>
-    </ul>
-</div>
-<div class="copyright">Copyright &copy;
-    <script>document.write(new Date().getFullYear());</script>
-    <a href="http://ThinkParkFE.github.io/" target="_blank">ThinkParkFE</a>. All Rights Reserved.
+                
+            </ul>
 </div>
 
-<!--baidu Analytics-->
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?1ee2f02312eff0b52269d9e346025a78";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-</body>
-</html>
+
