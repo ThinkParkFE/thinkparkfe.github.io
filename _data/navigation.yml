@@ -1,0 +1,13 @@
+# Menu navigation links
+
+#- title: Theme Setup
+#  url: /theme-setup/
+
+#- title: External Link
+#  url: http://mademistakes.com
+
+- title: CodeGuide
+  url: http://thinkparkfe.github.io/CodeGuide/
+
+- title: tool
+  url: /tags/#tool

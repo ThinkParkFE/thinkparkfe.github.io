@@ -1,16 +1,12 @@
 ---
 layout: post
-title:  "关于我们"
+title:  ThinkPark
 date:   2015-07-15 18:34:00
-categories: about
-tags: 关于我们
+categories: thinkpark
+tags: [video,about]
 ---
-
-ThinkParkFE 
-
-{% highlight javascript %}
-var team={
-	name:'ThinkParkFE',
-	url:'http://thinkparkfe.github.io/'
-}
+<iframe frameborder="0" width="640" height="498" src="http://v.qq.com/iframe/player.html?vid=a0158a6v416&tiny=0&auto=0" allowfullscreen></iframe>
+视频分享地址：
+{% highlight html %}
+<iframe frameborder="0" width="640" height="498" src="http://v.qq.com/iframe/player.html?vid=a0158a6v416&tiny=0&auto=0" allowfullscreen></iframe>
 {% endhighlight %}
