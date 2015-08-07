@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ios 常见问题及解决方案"
+title:  "IOS 常见问题及解决方案"
 description: "Mars，移动Web前端知识库，收集与归纳移动Web开发中常见的问题。主要介绍移动端Web解决方案，包括代码结构规范、字体设置最佳实践、模拟原生效果实践、工具类方法汇总、iOS与Android平台上问题列表、高性能Mobile Web开发、类库依赖推荐等。"
 date:   2015-08-07 14:00:00
 categories: mobile
@@ -9,7 +9,7 @@ comments: true
 ---
 
 
-解决ios上的各种坑。
+解决IOS上的各种坑。
 
 ##iOS 常见问题及解决方案
 
