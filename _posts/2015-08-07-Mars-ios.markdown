@@ -12,8 +12,8 @@ comments: true
 解决IOS上的各种坑。
 
 ##iOS 常见问题及解决方案
-
 ===
+
 * [Position fixed & scrolling on iOS](http://remysharp.com/2012/05/24/issues-with-position-fixed-scrolling-on-ios/)
 * `iOS 5.0-` 的`Date`构造函数不支持规范标准中定义的`YYYY-MM-DD`格式，如 `new Date('2013-11-11')` 是 `Invalid Date`, 但支持`YYYY/MM/DD`格式，可用 `new Date('2013/11/11')` 
 * IOS（7.1.1版本）使用webapp模式时滚动元素无法滚动到头，解决办法是设置 `<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />` 让APP占用整个屏幕空间布局。参考[官方文档](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
