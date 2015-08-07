@@ -190,6 +190,9 @@ body {
 	.entry-reading-time {
 		float: right;
 	}
+   .fn{
+     text-transform:none;
+   }
 }
 header .entry-meta {
 	display: none; // hide header meta on small screens

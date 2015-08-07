@@ -3,7 +3,7 @@ description:      ThinkParkFE 团队沉淀 精华提炼
 #disqus_shortname: hpstrtheme
 duoshuo_shortname: thinkparkfe
 reading_time:     true
-words_per_minute: 200
+words_per_minute: 100
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 # url: http://ThinkParkFE.github.io
@@ -43,7 +43,11 @@ timezone:    Asia/Shanghai
 future:      true
 pygments:    true  
 highlighter: pygments
-markdown:    kramdown
+#markdown:    kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [fenced_code_blocks,no_intra_emphasis,strikethrough,no_intra_emphasis,autolink,tables]
+
 gems:
   - jekyll-sitemap
 sass:
@@ -52,6 +56,7 @@ sass:
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title/
+
 
 # Amount of post to show on home page
 paginate: 5
