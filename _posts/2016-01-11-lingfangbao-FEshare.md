@@ -42,7 +42,7 @@ comments: true
 ```
 
 提交表单，需要定义它的变量，需要判断它的格式，是否有填写，电话号码需要用正则表达式来判断是否填写有误，ajax是用来提交表单用的，要通过http请求加载数据。
-```javascript
+{% highlight js %}
 $("form").on("submit", function () {
         var name = $("input[name='name']").val();
         var phone = $("input[name='tel']").val();
@@ -71,7 +71,7 @@ $("form").on("submit", function () {
         });
         return false;
     });
-```
+{% endhighlight %}
 
 
 
@@ -151,7 +151,7 @@ $("form").on("submit", function () {
 ```
 
 微信端，当用户横屏时要给出一个提示，横屏时看不了内容，需要再写一个提示页面，再写js，给出判断，当屏幕旋转到90渡或者-90渡的时候，就给出提示，旋转到180渡的时候就正常呈现内容
-```javascript
+{% highlight js %}
 function orient() {
         if (window.orientation == 0 || window.orientation == 180) {
             orientation = 'portrait';
@@ -170,7 +170,7 @@ function orient() {
     $(window).on('orientationchange', function (e) {
         orient();
     });
-```
+{% endhighlight %}
 
 在实践中，通过遇到这些问题，再把问题解决好，从中可以学到很多知识，平常讲的一些问题，也知道怎么解决，使用，但当真正遇到的时候，就不一定会做，只有自己碰到了，解决了，才会牢牢记住这个知识点。
 
