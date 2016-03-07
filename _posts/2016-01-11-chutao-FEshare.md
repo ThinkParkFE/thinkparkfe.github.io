@@ -4,7 +4,7 @@ title:  "储涛2016年1月11日总结"
 description: "储涛的总结"
 date:   2016-01-11 10:24:00
 categories: share
-tags: [前端分享,储涛]
+tags: [总结,前端分享,储涛]
 comments: true
 ---
 

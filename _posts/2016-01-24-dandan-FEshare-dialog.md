@@ -34,6 +34,7 @@ comments: true
 
 
      if (!$.isPlainObject(options)) {
+
         options = {content: options};
         if (callback && $.isFunction(callback)) {
              options.success = callback;
@@ -43,7 +44,6 @@ comments: true
      if (!$.isFunction(opts.success)) {
                 opts.success = $.noop;
      }
-
 
 
   >2.判断安卓机和iOS系统

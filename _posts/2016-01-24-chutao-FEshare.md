@@ -2,9 +2,9 @@
 layout: post
 title:  "HTML5 重力感应"
 description: ""
-date:   2016-01-24
+date:   2016-01-24 17:00:00
 categories: share
-tags: [前端分享,储涛]
+tags: [重力感应,前端分享,储涛]
 comments: true
 ---
 
