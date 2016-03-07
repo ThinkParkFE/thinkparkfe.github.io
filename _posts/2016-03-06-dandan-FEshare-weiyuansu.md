@@ -17,9 +17,11 @@ comments: true
 >这里主要讲述在使用::after和::before的几个例子：要与content一起使用
 
 ####1.引用语录：
-  {% highlight js %}
+  {% highlight html %}
  <p class="ex-three"> 引用语录 </p>
+ {% endhighlight %}
 
+ {% highlight css %}
   .ex-three{
             position: relative;
             display: inline-block;
@@ -45,8 +47,12 @@ comments: true
 ####2.添加前缀
 
 #####2.1添加外框
-{% highlight js %}
+
+{% highlight html %}
 <p class="ex-one" >HYHYUHY</p>
+ {% endhighlight %}
+
+ {% highlight css %}
  .ex-one {
             position: relative;
             display: inline-block;
@@ -64,36 +70,28 @@ comments: true
 {% endhighlight %}
 
 #####2.2添加外框和前缀
-{% highlight js %}
+
+{% highlight html %}
 <p class="box">Other content.</p> 
+{% endhighlight %}
 
+ {% highlight css %}
 p.box {  
-
   width: 300px;  
-
   border: solid 1px white;  
-
   padding: 20px;  
-
 }  
-
-   
-
 p.box:before {  
-
   content: "#";  
-
   border: solid 1px white;  
-
   padding: 2px;  
-
   margin: 0 10px 0 0;  
-
 }
 {% endhighlight %}
 
+
 ####3.添加图片
-{% highlight js %}
+{% highlight css %}
 ::after{
    content:url(img.jpg);
 }
@@ -102,8 +100,11 @@ p.box:before {
 
 ####4.显示相应的地址
 
-{% highlight js %}
+{% highlight html %}
 <a class="ex-two" href="http://www.baidu.com">百度链接:</a>
+{% endhighlight %}
+
+{% highlight css %}
 .ex-two{
             position: relative;
             display: inline-block;
@@ -124,15 +125,11 @@ p.box:before {
 
 ####5.时尚焦点相框   http://www.jiawin.com/css-before-after
 
- 
-
- 
 
 ####6.计数器
 
 #####6.1冰激凌计数
-{% highlight js %}
-
+{% highlight html %}
 <strong>下面中国十大冰淇淋你吃过几个？</strong>
 <ol>
     <li><input type="checkbox" id="icecream1"><label for="icecream1">哈根达斯</label></li>
@@ -148,6 +145,10 @@ p.box:before {
 </ol>
 你总共选择了 <strong class="total"></strong> 款冰淇淋！
 
+{% endhighlight %}
+
+
+{% highlight css %}
 body {
   counter-reset: icecream;
 }
@@ -157,17 +158,37 @@ input:checked {
 .total::after {
   content: counter(icecream);
 }
-
 {% endhighlight %}
 
 
 
 #####6.2显示目录 
 
- 
-{% highlight js %}
-<style>
+{% highlight html %}
 
+<h1>HTML tutorials</h1>
+
+<h2>HTML Tutorial</h2>
+
+<h2>XHTML Tutorial</h2>
+
+<h2>CSS Tutorial</h2>
+
+<h1>Scripting tutorials</h1>
+
+<h2>JavaScript</h2>
+
+<h2>VBScript</h2>
+
+<h1>XML tutorials</h1>
+
+<h2>XML</h2>
+
+<h2>XSL</h2>
+ {% endhighlight %}
+ 
+ 
+{% highlight css %}
 body{
     counter-reset: section;
 }
@@ -183,37 +204,10 @@ h2:before{
     counter-increment:subsection;
     content: counter(section) "." counter(subsection) "、";
 }
+{% endhighlight %}
 
-</style>
 
 
-<body>
-
-<h1>HTML tutorials</h1>
-
-<h2>HTML Tutorial</h2>
-
-<h2>XHTML Tutorial</h2>
-
-<h2>CSS Tutorial</h2>
-
- 
-
-<h1>Scripting tutorials</h1>
-
-<h2>JavaScript</h2>
-
-<h2>VBScript</h2>
-
-<h1>XML tutorials</h1>
-
-<h2>XML</h2>
-
-<h2>XSL</h2>
-
-</body>
-
- {% endhighlight %}
 
 ####7. 特殊字符html css 和js
 http://www.cnblogs.com/starof/p/4718550.html
