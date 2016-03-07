@@ -2,9 +2,9 @@
 layout: post
 title:  "前端小知识"
 description: ""
-date:   2016-03-06
+date:   2016-03-06 18:00:00
 categories: share
-tags: [前端分享,储涛]
+tags: [前端小知识,前端分享,储涛]
 comments: true
 ---
 
