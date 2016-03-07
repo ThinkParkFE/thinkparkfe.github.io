@@ -9,8 +9,6 @@ comments: true
 ---
 
 
-
-
 >gulp 现有已编辑好的一套微信组件，先摘取其中的Dialog组件，将alert(), confirm(),toast(),loadingtoast()和actionsheet()事件封装在一个js文件中，包括css样式和HTML格式。
 
 ###参考代码：motion.js
@@ -32,9 +30,8 @@ comments: true
 >四.涉及到的关键代码
   >1.对传入的参数进行验证处理
 
-
+{% highlight js %}
      if (!$.isPlainObject(options)) {
-
         options = {content: options};
         if (callback && $.isFunction(callback)) {
              options.success = callback;
@@ -44,20 +41,18 @@ comments: true
      if (!$.isFunction(opts.success)) {
                 opts.success = $.noop;
      }
-
+  {% endhighlight %}
 
   >2.判断安卓机和iOS系统
-   {% highlight js %}
+ {% highlight js %}
   var u = navigator.userAgent;
       var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
       var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
       if (isiOS) {.... }
-
-    {% endhighlight %}
+  {% endhighlight %}
 
   >3.将参数动态添加到html上
-
-   {% endhighlight %}
+{% highlight js %}
   var _DOM = $(".TP_dialog_confirm");
   _DOM.find(".TP_dialog_title").text(opts.title);
   _DOM.find(".TP_dialog_bd").html(opts.content);
@@ -74,7 +69,6 @@ comments: true
 
    >4.根据参数设置添加的信息
 
-    {% endhighlight %}
     $.each(opts.cells, function (i, cell) {
        _DOM.find(".TP_actionsheet_menu").append($(tpls.actionsheet_cell).html(cell.text).off("tap").on("tap", function () {
        _DOM.addClass("hide");
