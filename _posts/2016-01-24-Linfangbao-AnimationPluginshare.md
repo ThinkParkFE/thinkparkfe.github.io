@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "动画插件和视频"
-description: "动画插件和视频"
-date:   2016-01-24 18:00:00
-categories: ASshare
+description: "使用动画插件的小案例"
+date:   2016-01-24 03:00:00
+categories: share
 tags: [前端分享,林方保]
 comments: true
 ---
