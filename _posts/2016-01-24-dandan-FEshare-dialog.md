@@ -32,7 +32,7 @@ comments: true
 >四.涉及到的关键代码
   >1.对传入的参数进行验证处理
 
-  {% highlight js %}
+
      if (!$.isPlainObject(options)) {
         options = {content: options};
         if (callback && $.isFunction(callback)) {
@@ -44,7 +44,7 @@ comments: true
                 opts.success = $.noop;
      }
 
-   {% endhighlight %}
+
 
   >2.判断安卓机和iOS系统
    {% highlight js %}
