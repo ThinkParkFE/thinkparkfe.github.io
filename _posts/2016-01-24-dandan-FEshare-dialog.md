@@ -65,10 +65,10 @@ comments: true
         _DOM.addClass("hide");
         opts.success();
    });
-   {% endhighlight %}
+  {% endhighlight %}
 
    >4.根据参数设置添加的信息
-
+{% highlight js %}
     $.each(opts.cells, function (i, cell) {
        _DOM.find(".TP_actionsheet_menu").append($(tpls.actionsheet_cell).html(cell.text).off("tap").on("tap", function () {
        _DOM.addClass("hide");
