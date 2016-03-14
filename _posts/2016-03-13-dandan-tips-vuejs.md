@@ -17,7 +17,8 @@ comments: true
 ####初始化准备：
 >安装：bower install vue --save-dev
 
->引用：<script src="../bower_components/vue/dist/vue.min.js"></script>
+>引用
+```<script src="../bower_components/vue/dist/vue.min.js"></script>```
 ## 数据绑定（msg是数据）
 
  {% highlight html %}
