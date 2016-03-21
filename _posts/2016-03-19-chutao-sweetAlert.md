@@ -37,7 +37,7 @@ bower install sweetalert
 
 //使用方法
 
-{% highlight html %}
+{% highlight js %}
 
 
 swal("hello world") 默认调用方法添加一条内容即可
