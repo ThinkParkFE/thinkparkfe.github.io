@@ -29,7 +29,7 @@ comments: true
 
 	<div ng-controller="SimpleController">
     <input type="text" name="name" ng-model="name">
-    <span>{{name}}}</span>
+    <span>{{name}}</span>
     </div>
 
 {% endhighlight %}
@@ -38,7 +38,7 @@ comments: true
 
  var app=angular.module('SimpleApp',[]);
  app.controller('SimpleComtroller',['$scope',function($scope){
-    $scope.name="Juntao QIU"
+    $scope.name="WZD"
  }]);
 
 {% endhighlight %}
@@ -48,7 +48,7 @@ comments: true
 {% highlight js %}
 
 ['$scope',function($scope){
-    $scope.name="Juntao QIU"
+    $scope.name="WZD"
  }]);
 
 {% endhighlight %}
