@@ -13,15 +13,6 @@ comments: true
 
 
 
-//安装插件
-
-{% highlight js %}
-
-bower install sweetalert
-
-{% endhighlight %}
-
-
 
 //引入插件js以及css样式
 {% highlight html %}
