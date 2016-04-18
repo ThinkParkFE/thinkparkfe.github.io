@@ -7,6 +7,7 @@ categories: share
 tags: [林方保，angularjs]
 comments: true
 ---
+
 ####angular下拉框从后台数据里面绑定多个值
 ####在标签里面添加下面的几个属性：
 >isteven-multi-select：主要的
@@ -39,10 +40,10 @@ apiService("DingTalk.UserList", {token: token, deptId: 1})
 再从下拉框绑定到后台去
 
     $scope.achievements = {staff1:[]};
-        apiService("KPI.Add", $scope.achievements)
+        apiService("接口", $scope.achievements)
                 .success(function (res) {
                 if(res.ret==200)
-                    $scope.alert = {"title": "绩效添加成功", "type": "success"};
+                    $scope.alert = {"title": "添加成功", "type": "success"};
             })
   {% endhighlight %}
 
