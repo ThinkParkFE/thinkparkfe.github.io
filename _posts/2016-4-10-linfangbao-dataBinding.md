@@ -4,7 +4,7 @@ title:  "angular数据绑定"
 description: "angular从后台获取数据再绑定到后台去"
 date:   2016-04-10 18:00:00
 categories: share
-tags: [林方保，angualrjs,dataBinding]
+tags: [林方保，前端分享,dataBinding]
 comments: true
 ---
 ####angular从后台获取数据再绑定到后台去

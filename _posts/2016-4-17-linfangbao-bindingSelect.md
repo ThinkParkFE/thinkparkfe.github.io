@@ -2,9 +2,9 @@
 layout: post
 title:  "angular绑定下拉框绑"
 description: "angular下拉框绑定多个值"
-date:   2016-04-10 18:00:00
+date:   2016-04-17 18:00:00
 categories: share
-tags: [林方保，angualrjs,bindingSelect]
+tags: [林方保，前端分享,bindingSelect]
 comments: true
 ---
 ####angular下拉框从后台数据里面绑定多个值
