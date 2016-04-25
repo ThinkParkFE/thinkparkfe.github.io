@@ -11,7 +11,7 @@ comments: true
 
 
 ###创建canvas对象，实现拖动功能
-####*本次的分享主要涉及到canvas的创建和鼠标事件的处理，要实现的效果是创建canvas标签，并通过鼠标事件拖动元素
+#### *本次的分享主要涉及到canvas的创建和鼠标事件的处理，要实现的效果是创建canvas标签，并通过鼠标事件拖动元素
 
 
 >###1.首先在页面上创建一个框div，命名为Canvas，代表里面的元素都是canvas标签的元素
@@ -108,9 +108,11 @@ init('box1', 50);
 {% highlight js %}
 
 function place(box){
-       //设置定位的top值和left，在页面位置随机出现
+       <!--//设置定位的top值和left，在页面位置随机出现-->
         var positionTop=Math.random()*1000;
+        
         var positionLeft=Math.random()*1000;
+        
         $(box).css({
             top:positionTop,
             left:positionLeft
