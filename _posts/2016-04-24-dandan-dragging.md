@@ -58,8 +58,9 @@ comments: true
 
 {% highlight js %}
 
-//'box1'代表的是创建元素的id，50代表半径和xy坐标
-init('box1', 50);
+<!--//'box1'代表的是创建元素的id，50代表半径和xy坐标-->
+
+    init('box1', 50);
 
     
 {% endhighlight %}
@@ -69,7 +70,8 @@ init('box1', 50);
 
 {% highlight js %}
 
-  function init(Box,radius) {
+    function init(Box,radius) {
+  
         creatBox(Box, radius);
         place('#'+Box);
         move('#' + Box);
@@ -79,7 +81,7 @@ init('box1', 50);
 
 {% highlight js %}
 
- function creatBox(Box,radius) {
+    function creatBox(Box,radius) {
 
         var Canvas = document.getElementById('Canvas');
         //创建元素
@@ -107,8 +109,9 @@ init('box1', 50);
 
 {% highlight js %}
 
-function place(box){
-       <!--//设置定位的top值和left，在页面位置随机出现-->
+     function place(box){
+       //设置定位的top值和left，在页面位置随机出现
+       
         var positionTop=Math.random()*1000;
         
         var positionLeft=Math.random()*1000;
@@ -129,13 +132,17 @@ function place(box){
 #### *移动move的函数定义
 {% highlight js %}
 
- function move(box) {
+     function move(box) {
         //设置变量
+        
         var mouseX, mouseY;
         var objX, objY;
-        var isDowm = false; //是否按下鼠标
+        var isDowm = false; 
+        
+        //是否按下鼠标
 
        //当鼠标按下的时候，
+       
         $(box).mousedown(function (e) {
     
             mouseX = e.clientX;
@@ -150,6 +157,7 @@ function place(box){
         });
         
         //当鼠标移动的时候
+        
         $(box).mousemove(function (e) {
             
             var x = e.pageX;
@@ -157,7 +165,7 @@ function place(box){
             console.log('mousemove:x:' + x, 'y:' + y);
             if (isDowm) {
 
-//在鼠标移动的过程中，位置不断的发生改变
+        //在鼠标移动的过程中，位置不断的发生改变
 
                 $(this).css({
                     "top": parseInt(objY) + parseInt(y) - parseInt(mouseY) + "px",
@@ -168,10 +176,12 @@ function place(box){
         });
         
         //当鼠标抬起的的时候
+        
         $(box).mouseup(function (e) {
             if (isDowm) {
 
                 //  .pageX,clientX,.offsetX这些属性提供了鼠标指针位置相对于页面的左上角的X和Y坐标，在鼠标抬起的时候，位置不再改变
+                
                 var x = e.pageX;
                 var y = e.pageY;
 
