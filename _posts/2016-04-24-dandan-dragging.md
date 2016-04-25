@@ -60,7 +60,7 @@ comments: true
 
 {% highlight js %}
 
-<!--'box1'代表的是创建元素的id，50代表半径和xy坐标-->
+    //'box1'代表的是创建元素的id，50代表半径和xy坐标
 
     init('box1', 50);
 
@@ -112,7 +112,8 @@ comments: true
 {% highlight js %}
 
      function place(box){
-  <!--     //设置定位的top值和left，在页面位置随机出现-->
+     
+     //设置定位的top值和left，在页面位置随机出现
        
         var positionTop=Math.random()*1000;
         
