@@ -42,7 +42,7 @@ comments: true
         height: 100%;
     }
   
-   <!-- 定义canvas为浮动元素，用于鼠标点击移动 -->
+    //定义canvas为浮动元素，用于鼠标点击移动
    
     canvas{
         position: absolute;
