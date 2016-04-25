@@ -11,7 +11,7 @@ comments: true
 
 
 ###创建canvas对象，实现拖动功能
-#### *本次的分享主要涉及到canvas的创建和鼠标事件的处理，要实现的效果是创建canvas标签，并通过鼠标事件拖动元素
+####本次的分享主要涉及到canvas的创建和鼠标事件的处理，要实现的效果是创建canvas标签，并通过鼠标事件拖动元素
 
 
 >###1.首先在页面上创建一个框div，命名为Canvas，代表里面的元素都是canvas标签的元素
@@ -41,7 +41,9 @@ comments: true
         width: 100%;
         height: 100%;
     }
-    //定义canvas为浮动元素，用于鼠标点击移动
+  
+   <!-- 定义canvas为浮动元素，用于鼠标点击移动 -->
+   
     canvas{
         position: absolute;
     }
@@ -58,7 +60,7 @@ comments: true
 
 {% highlight js %}
 
-<!--//'box1'代表的是创建元素的id，50代表半径和xy坐标-->
+<!--'box1'代表的是创建元素的id，50代表半径和xy坐标-->
 
     init('box1', 50);
 
@@ -84,16 +86,16 @@ comments: true
     function creatBox(Box,radius) {
 
         var Canvas = document.getElementById('Canvas');
-        //创建元素
+       <!-- //创建元素-->
         var box = document.createElement('canvas');
-        //属性设置
+        <!--//属性设置-->
         box.setAttribute('id', Box);
         box.setAttribute('width', radius*2);
         box.setAttribute('height', radius*2);
-        //作为子元素
+        <!--//作为子元素-->
         Canvas.appendChild(box);
        
-       //绘制元素arc
+       <!-- //绘制元素arc-->
         var boxContext = document.getElementById(Box).getContext('2d');
 
         boxContext.beginPath();
@@ -110,7 +112,7 @@ comments: true
 {% highlight js %}
 
      function place(box){
-       //设置定位的top值和left，在页面位置随机出现
+  <!--     //设置定位的top值和left，在页面位置随机出现-->
        
         var positionTop=Math.random()*1000;
         
@@ -129,19 +131,19 @@ comments: true
 >###3.最后设置移动的功能，监听mousedown、mousemove、mouseup这三个鼠标事件，根据不同的位置让元素的位置进行移动；
 
 
-#### *移动move的函数定义
+####移动move的函数定义
 {% highlight js %}
 
      function move(box) {
-        //设置变量
+       <!-- //设置变量-->
         
         var mouseX, mouseY;
         var objX, objY;
         var isDowm = false; 
         
-        //是否按下鼠标
+       <!-- //是否按下鼠标-->
 
-       //当鼠标按下的时候，
+    <!--   //当鼠标按下的时候，-->
        
         $(box).mousedown(function (e) {
     
@@ -156,7 +158,7 @@ comments: true
 
         });
         
-        //当鼠标移动的时候
+        <!--//当鼠标移动的时候-->
         
         $(box).mousemove(function (e) {
             
@@ -165,7 +167,7 @@ comments: true
             console.log('mousemove:x:' + x, 'y:' + y);
             if (isDowm) {
 
-        //在鼠标移动的过程中，位置不断的发生改变
+       <!-- //在鼠标移动的过程中，位置不断的发生改变-->
 
                 $(this).css({
                     "top": parseInt(objY) + parseInt(y) - parseInt(mouseY) + "px",
@@ -175,12 +177,12 @@ comments: true
             }
         });
         
-        //当鼠标抬起的的时候
+       <!-- //当鼠标抬起的的时候-->
         
         $(box).mouseup(function (e) {
             if (isDowm) {
 
-                //  .pageX,clientX,.offsetX这些属性提供了鼠标指针位置相对于页面的左上角的X和Y坐标，在鼠标抬起的时候，位置不再改变
+            <!--    //  .pageX,clientX,.offsetX这些属性提供了鼠标指针位置相对于页面的左上角的X和Y坐标，在鼠标抬起的时候，位置不再改变-->
                 
                 var x = e.pageX;
                 var y = e.pageY;
@@ -199,6 +201,6 @@ comments: true
 {% endhighlight %}
 
 
->#### *在设置鼠标移动的方法的时候，我使用了JQuery进行编写，通过参数的传递进行事件的触发。在操作的过程中，通过输出当前的x/y来判断是否事件有执行，不断调试之后出来的方法；
+>####在设置鼠标移动的方法的时候，我使用了JQuery进行编写，通过参数的传递进行事件的触发。在操作的过程中，通过输出当前的x/y来判断是否事件有执行，不断调试之后出来的方法；
 
-#### *最主要的判断准则：parseInt(objY) + parseInt(y) - parseInt(mouseY)，objY是代表最开始的y轴位置，y代表的是当前鼠标所在的y轴位置，mouseY是指当鼠标点击的时候在的位置，所以该表达式，是最开始的objY轴位置+（鼠标所在的位置y-鼠标点击时的位置mouseY），如果（鼠标所在的位置y-鼠标点击时的位置mouseY）<0,top值就变小，元素往上移动；如果（鼠标所在的位置y-鼠标点击时的位置mouseY）>0,top值就变大，元素往下移动；
+####最主要的判断准则：parseInt(objY) + parseInt(y) - parseInt(mouseY)，objY是代表最开始的y轴位置，y代表的是当前鼠标所在的y轴位置，mouseY是指当鼠标点击的时候在的位置，所以该表达式，是最开始的objY轴位置+（鼠标所在的位置y-鼠标点击时的位置mouseY），如果（鼠标所在的位置y-鼠标点击时的位置mouseY）<0,top值就变小，元素往上移动；如果（鼠标所在的位置y-鼠标点击时的位置mouseY）>0,top值就变大，元素往下移动；
