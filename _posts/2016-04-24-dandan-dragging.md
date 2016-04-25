@@ -2,7 +2,7 @@
 layout: post
 title:  "元素的点击拖动事件"
 description: "创建canvas对象，实现鼠标点击元素并且移动鼠标，拖动元素，使用了mousedown、mousemove、mouseup事件"
-date:   2016-04-18 18:00:00
+date:   2016-04-24 18:00:00
 categories: share
 tags: [王兆丹，angualrjs，Jquery，scroll]
 comments: true
