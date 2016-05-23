@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "angular的ngSweetAlert 弹出框插件"
-description: "ngSweetAlert 弹出框"
+title:  "angular的ngSweetAlert弹出框插件"
+description: "ngSweetAlert弹出框"
 date:   2016-05-22 18:00:00
 categories: share
 tags: [林方保，angular,popup]
